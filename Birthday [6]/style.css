@@ -70,12 +70,8 @@ img.birthday {
 .text h1 {
   margin-bottom: 1em;
   font-size: 1.5em;
-  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: gradientShift 3s ease-in-out infinite, glow 2s ease-in-out infinite alternate;
+  color: #333;
+  animation: pulse 3s ease-in-out infinite;
 }
 
 .text p {
@@ -84,7 +80,6 @@ img.birthday {
   margin-bottom: 1.5em;
   word-spacing: 1px;
   letter-spacing: 0.2px;
-  animation: textFloat 4s ease-in-out infinite;
 }
 
 .muted {
@@ -137,33 +132,12 @@ img.birthday {
   }
 }
 
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 5px rgba(255, 107, 107, 0.5), 0 0 10px rgba(78, 205, 196, 0.5);
-  }
-  to {
-    text-shadow: 0 0 10px rgba(255, 107, 107, 0.8), 0 0 20px rgba(78, 205, 196, 0.8);
-  }
-}
-
-@keyframes textFloat {
+@keyframes pulse {
   0%, 100% {
-    transform: translateY(0px);
+    opacity: 1;
   }
   50% {
-    transform: translateY(-3px);
+    opacity: 0.8;
   }
 }
 
