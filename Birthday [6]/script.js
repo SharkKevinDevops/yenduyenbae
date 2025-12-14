@@ -9,9 +9,9 @@ document.addEventListener('click', () => {
   }
 }, { once: true });
 
-// Cut 1 second from end
+// Cut 3 seconds from end
 audio.addEventListener('timeupdate', () => {
-  if (audio.currentTime >= audio.duration - 1) {
+  if (audio.currentTime >= audio.duration - 3) {
     audio.currentTime = 0;
   }
 });
