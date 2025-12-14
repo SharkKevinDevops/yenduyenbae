@@ -56,20 +56,22 @@ img.birthday {
 }
 
 .text {
-  padding: 1em;
+  padding: 1.5em;
   color: #333;
   text-align: left;
   margin-left: 25%;
+  width: 60%;
 }
 
 .text h1 {
-  margin-bottom: 1em;
-  font-size: 1.5em;
+  margin-bottom: 1.2em;
+  font-size: 1.8em;
 }
 
 .text p {
-  line-height: 1.4;
-  margin-bottom: 0.5em;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 1em;
 }
 
 .muted {
