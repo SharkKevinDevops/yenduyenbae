@@ -59,8 +59,8 @@ img.birthday {
   padding: 1em;
   color: #333;
   text-align: left;
-  margin-left: 10%;
-  width: 80%;
+  margin-left: 5%;
+  width: 90%;
   max-width: none;
 }
 
@@ -73,8 +73,8 @@ img.birthday {
   font-size: 1em;
   line-height: 2;
   margin-bottom: 1.5em;
-  word-spacing: 4px;
-  letter-spacing: 1px;
+  word-spacing: 1px;
+  letter-spacing: 0.2px;
 }
 
 .muted {
