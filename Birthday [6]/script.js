@@ -1,10 +1,18 @@
 const audio = document.querySelector('audio');
-  const body = document.body;
+const body = document.body;
 
-  audio.addEventListener('play', () => {
-    body.classList.add('play-music');
-  });
+// Auto play with user interaction
+document.addEventListener('click', () => {
+  if (audio.paused) {
+    audio.muted = false;
+    audio.play();
+  }
+}, { once: true });
 
-  audio.addEventListener('pause', () => {
-    body.classList.remove('play-music');
-  });
+audio.addEventListener('play', () => {
+  body.classList.add('play-music');
+});
+
+audio.addEventListener('pause', () => {
+  body.classList.remove('play-music');
+});
